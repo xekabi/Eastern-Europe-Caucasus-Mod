@@ -16,7 +16,7 @@ public final class ClientAlcohol {
     public static void set(float amount) {target=Math.max(0, Math.min(100, amount));}
     @SubscribeEvent public static void camera(ViewportEvent.ComputeCameraAngles evt) {
         var mc=Minecraft.getInstance();
-        if (mc.player==null || mc.isPaused() || mc.options.getCameraType().isDetached()) return;
+        if (mc.player==null || mc.isPaused() || mc.options.getCameraType() != net.minecraft.client.CameraType.FIRST_PERSON) return;
         smooth=Mth.lerp(0.025f,smooth,target);
         float intensity=Math.max(0f,(smooth-14f)/86f)*(float)(double)VisualConfig.CAMERA_SWAY.get();
         if (intensity<=0.001f) return;
