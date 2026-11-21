@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "ICI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "eac16:georgian_mail_chest"
+    }
+  },
+  "result": {
+    "item": "eac16:georgian_reinforced_chest"
+  }
+}

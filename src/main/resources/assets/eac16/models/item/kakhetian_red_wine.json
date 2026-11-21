@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eac16:item/kakhetian_red_wine"
+  }
+}
